@@ -1,5 +1,9 @@
 <h1>{{mainCtrl.greeting}}</h1>
 
 <div ng-repeat="animal in mainCtrl.animals">
-  <p>{{animal.name}}</p>
+  <p>Name: {{animal.name}}</p>
+  <img ng-src="{{animal.image}}">
+  <p>Bio: {{animal.bio}}</p>
+  <p>Likes: {{animal.like}}</p>
+  <hr>
 </div>

@@ -10,7 +10,7 @@
 
   function mainController($scope, mainService) {
     /*jshint validthis: true */
-    this.greeting = 'Hello World!';
+    this.greeting = 'Animal Shelter';
     this.animals = mainService.animals;
   }
 

@@ -8,7 +8,8 @@
     .module('animalsApp', [
       'ngRoute',
       'animalsApp.config',
-      'animalsApp.components.main'
+      'animalsApp.components.main',
+      'animalsApp.components.comment'
     ]);
 
 })();

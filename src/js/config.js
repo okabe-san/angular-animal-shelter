@@ -13,6 +13,11 @@
       controller: 'mainController',
       controllerAs: 'mainCtrl'
     })
+    .when('/comment', {
+      templateUrl: 'js/components/comment/comment.view.html',
+      controller: 'commentController',
+      controllerAs: 'commentCtrl'
+    })
     .otherwise('/');
   }
 

@@ -1,10 +1,11 @@
 <h1>{{mainCtrl.greeting}}</h1>
 
-<div ng-repeat="animal in mainCtrl.animals">
-  <p>Name: {{animal.name}}</p>
-  <img ng-src="{{animal.image}}">
-  <p>Bio: {{animal.bio}}</p>
-  <p>Likes: {{animal.like}}</p>
-  <a href="#/comment"><button>Comments</button></a>
-  <hr>
+<div class="animal-wrapper">
+  <section class="animal" ng-repeat="animal in mainCtrl.animals">
+    <p>Name: {{animal.name}}</p>
+    <img ng-src="{{animal.image}}">
+    <p>Bio: {{animal.bio}}</p>
+    <p>Likes: {{animal.like}}</p>
+    <a href="#/comment"><button>Comments</button></a>
+  </section>
 </div>

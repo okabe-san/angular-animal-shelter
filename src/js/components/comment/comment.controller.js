@@ -6,11 +6,18 @@
     .module('animalsApp.components.comment', [])
     .controller('commentController', commentController);
 
-  commentController.$inject = ['$scope', 'mainService', 'commentService'];
+  commentController.$inject = ['$scope', 'mainService'];
 
-  function commentController($scope, commentService) {
+  function commentController($scope, mainService) {
     /*jshint validthis: true */
-    this.greeting = 'Comment Page';
+    this.greeting = 'Information';
+    // this.animal = animal;
   }
+
+  // function animal(num, mainService) {
+  //   console.log('test');
+  //   /*jshint validthis: true */
+  //   this.animal = mainService.animal[num];
+  // }
 
 })();

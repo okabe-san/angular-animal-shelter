@@ -6,7 +6,7 @@
 
   angular
     .module('animalsApp', [
-      'ngRoute',
+      'ui.router',
       'animalsApp.config',
       'animalsApp.components.main',
       'animalsApp.components.comment'

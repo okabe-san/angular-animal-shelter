@@ -12,6 +12,7 @@
     /*jshint validthis: true */
     this.greeting = 'Animal Shelter';
     this.animals = mainService.animals;
+
   }
 
 })();

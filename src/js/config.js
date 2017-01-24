@@ -3,22 +3,21 @@
   'use strict';
 
   angular
-    .module('animalsApp.config', ['ngRoute'])
+    .module('animalsApp.config', [])
     .config(appConfig);
 
-  function appConfig($routeProvider) {
-    $routeProvider
-    .when('/', {
+  function appConfig($stateProvider) {
+    $stateProvider
+    .state('main', {
+      url: '/',
       templateUrl: 'js/components/main/main.view.html',
-      controller: 'mainController',
-      controllerAs: 'mainCtrl'
+      controller: 'mainController as mainCtrl'
     })
-    .when('/comment', {
+    .state('detail', {
+      url: '/:id',
       templateUrl: 'js/components/comment/comment.view.html',
-      controller: 'commentController',
-      controllerAs: 'commentCtrl'
-    })
-    .otherwise('/');
+      controller: 'commentController as commentCtrl'
+    });
   }
 
 })();

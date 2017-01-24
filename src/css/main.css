@@ -8,13 +8,13 @@ img {
   max-width: 200px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
   .animal-wrapper {
     display: flex;
     flex-wrap: wrap;
   }
 
   .animal {
-    width: 33%;
+    width: 20%;
   }
 }

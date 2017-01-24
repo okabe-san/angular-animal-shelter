@@ -8,6 +8,10 @@
 
   function commentService() {
     /*jshint validthis: true */
+    this.animal = animal;
+  }
+
+  function animal(num) {
 
   }
 

@@ -5,6 +5,8 @@
     <img ng-src="{{animal.image}}">
     <p>Bio: {{animal.bio}}</p>
     <p>Likes: {{animal.like}}</p>
-    <a ui-sref="detail({id:$index})"><button ng-click="commentCtrl.animal('{id:$index}')">More Info</button></a>
+    <div ng-controller="commentController as commentCtrl">
+      <a ui-sref="detail({id:$index})"><button ng-click="commentCtrl.num({id:$index})">More Info</button></a>
+    </div>
   </section>
 </div>

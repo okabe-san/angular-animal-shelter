@@ -11,12 +11,11 @@
   function commentController(mainService) {
     /*jshint validthis: true */
     this.greeting = 'Information';
-    this.animal = mainService.animals[0];
-    // this.num = (data) => {
-    //   const id = data.id;
-    //   this.animal = mainService.animals[id];
-    //   console.log(this.animal);
-    // };
+    this.num = (data) => {
+      const id = data.id;
+      this.animal = mainService.animals[id];
+      console.log(this.animal);
+    };
   }
 
 })();

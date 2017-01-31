@@ -6,16 +6,16 @@
     .module('animalsApp.components.comment', [])
     .controller('commentController', commentController);
 
-  commentController.$inject = ['mainService'];
+  commentController.$inject = ['mainService', 'commentService'];
 
-  function commentController(mainService) {
+  function commentController(mainService, commentService) {
     /*jshint validthis: true */
     this.greeting = 'Information';
     this.num = (data) => {
       const id = data.id;
-      this.animal = mainService.animals[id];
-      console.log(this.animal);
+      commentService.animal = mainService.animals[id];
     };
+    this.animal = commentService.animal;
   }
 
 })();

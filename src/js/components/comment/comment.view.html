@@ -1,16 +1,14 @@
 <h1>{{commentCtrl.greeting}}</h1>
 
-<p> {{commentCtrl.animal}} </p>
-
-<!-- <div>
-  <section ng-repeat="animal in commentCtrl.animal">
-    <p>Name: {{animal.name}}</p>
-    <img ng-src="{{animal.image}}">
-    <p>Comments</p>
-    <button ng-if="animal.comments.length === 1">Comment</button>
+<div>
+  <section>
+    <p>Name: {{commentCtrl.animal.name}}</p>
+    <img ng-src="{{commentCtrl.animal.image}}">
+    <button ng-if="commentCtrl.animal.comments.length === 1">Comment</button>
+    <button ng-if="commentCtrl.animal.comments.length > 1">Comments</button>
     <hr>
   </section>
-</div> -->
+</div>
 
 <div>
   <a href="#/"><button>Home</button></a>

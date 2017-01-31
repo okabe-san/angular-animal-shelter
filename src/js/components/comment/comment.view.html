@@ -4,9 +4,11 @@
   <section>
     <p>Name: {{commentCtrl.animal.name}}</p>
     <img ng-src="{{commentCtrl.animal.image}}">
-    <button ng-if="commentCtrl.animal.comments.length === 1">Comment</button>
-    <button ng-if="commentCtrl.animal.comments.length > 1">Comments</button>
-    <hr>
+    <p ng-if="commentCtrl.animal.comments.length === 1">Comment: </p>
+    <p ng-if="commentCtrl.animal.comments.length > 1">Comments: </p>
+  </section>
+  <section ng-repeat="item in commentCtrl.animal.comments">
+    {{item.comment}}
   </section>
 </div>
 
